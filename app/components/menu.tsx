@@ -1,44 +1,58 @@
-'use client'; // REQUIRED in Next.js App Router when using state
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
+import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => setIsOpen((v) => !v);
   const closeMenu = () => setIsOpen(false);
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeMenu();
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
 
   return (
     <>
-      <div className="navbar">
-        <ul className={`nav-list ${isOpen ? 'active' : ''}`}>
+      <button
+        type="button"
+        className={`hamburger-menu ${isOpen ? "active" : ""}`}
+        onClick={toggleMenu}
+        aria-label={isOpen ? "Close menu" : "Open menu"}
+        aria-expanded={isOpen}
+        aria-controls="side-menu"
+      >
+        <span className="bar" />
+        <span className="bar" />
+        <span className="bar" />
+      </button>
+
+      {isOpen && <div className="menu-overlay" onClick={closeMenu} />}
+
+      <nav id="side-menu" className={`side-menu ${isOpen ? "open" : ""}`}>
+        <ul className="side-menu-list">
           <li>
-            <Link href="/kihon" className="nav-link" onClick={closeMenu}>
+            <Link href="/kihon" onClick={closeMenu}>
               Everything about Kihon
             </Link>
           </li>
           <li>
-            <Link href="/kata" className="nav-link" onClick={closeMenu}>
+            <Link href="/kata" onClick={closeMenu}>
               Everything about Kata
             </Link>
           </li>
           <li>
-            <Link href="/kumite" className="nav-link" onClick={closeMenu}>
+            <Link href="/kumite" onClick={closeMenu}>
               Everything about Kumite
             </Link>
           </li>
         </ul>
-      </div>
-
-      <div
-        className={`hamburger-menu ${isOpen ? 'active' : ''}`}
-        onClick={toggleMenu}
-      >
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </div>
+      </nav>
     </>
   );
 }

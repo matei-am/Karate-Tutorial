@@ -2,12 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import Header from "./components/header"; 
-import Menu from "./components/menu";
+
+
 export default function HomePage() {
   return (
-    <main style={{ maxWidth: 1000, margin: "0 auto", padding: "32px 24px" }}>
+    <main style={{ maxWidth: 1000, margin: "0 auto", padding: "32px 24px" }} className="page">
       <Header />
-      <Menu />
+
       {/* HERO */}
       <section
         style={{
@@ -146,7 +147,7 @@ export default function HomePage() {
       {/* FOOTER */}
       <footer style={{ marginTop: 40, paddingTop: 16, borderTop: "1px solid #e5e7eb" }}>
         <p style={{ margin: 0, color: "#6b7280", fontSize: 13 }}>
-          © {new Date().getFullYear()} Karate Academy • Built with Next.js
+          © {new Date().getFullYear()} AU Addmissions • Built with Next.js • by Matei Mihalache
         </p>
       </footer>
     </main>
