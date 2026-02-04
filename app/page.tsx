@@ -1,145 +1,149 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import Header from "./components/header"; 
+import Header from "./components/header";
 import Menu from "./components/menu";
 
 export default function HomePage() {
   return (
     <>
-    <Header />
-    <main className="hero">
-      {/* HERO */}
-      <section className="hero-section">
-        <div>
-          <h1 style={{ fontSize: 42, lineHeight: 1.1, margin: 0 }}>
-            Learn Karate: Basics, Kata, and Self-Discipline
-          </h1>
+      <Header />
+      <main className="hero">
+        {/* HERO */}
+        <section className="hero-section">
+          <div>
+            <h1 style={{ fontSize: 42, lineHeight: 1.1, margin: 0 }}>
+              Learn Karate: Basics, Kata, and Self-Discipline
+            </h1>
 
-          <p style={{ fontSize: 18, marginTop: 14, color: "#374151" }}>
-            A beginner-friendly guide to karate fundamentals—stances, strikes,
-            blocks, kata, and dojo etiquette. Train smarter, stay safe, and
-            build confidence.
-          </p>
+            <p style={{ fontSize: 18, marginTop: 14, color: "#374151" }}>
+              A beginner-friendly guide to karate fundamentals—stances, strikes,
+              blocks, kata, and dojo etiquette. Train smarter, stay safe, and
+              build confidence.
+            </p>
 
-          <div style={{ display: "flex", gap: 12, marginTop: 18, flexWrap: "wrap" }}>
-            <Link
-              href="/lessons"
-              style={{
-                padding: "10px 14px",
-                borderRadius: 10,
-                background: "#111827",
-                color: "white",
-                textDecoration: "none",
-                fontWeight: 600,
-              }}
-            >
-              Start Lessons
-            </Link>
+            <div style={{ display: "flex", gap: 12, marginTop: 18, flexWrap: "wrap" }}>
+              <Link
+                href="/lessons"
+                style={{
+                  padding: "10px 14px",
+                  borderRadius: 10,
+                  background: "#111827",
+                  color: "white",
+                  textDecoration: "none",
+                  fontWeight: 600,
+                }}
+              >
+                Start Lessons
+              </Link>
 
-            <Link
-              href="/kata"
-              style={{
-                padding: "10px 14px",
-                borderRadius: 10,
-                border: "1px solid #d1d5db",
-                color: "#111827",
-                textDecoration: "none",
-                fontWeight: 600,
-              }}
-            >
-              Explore Kata
-            </Link>
+              <Link
+                href="/kata"
+                style={{
+                  padding: "10px 14px",
+                  borderRadius: 10,
+                  border: "1px solid #d1d5db",
+                  color: "#111827",
+                  textDecoration: "none",
+                  fontWeight: 600,
+                }}
+              >
+                Explore Kata
+              </Link>
+            </div>
+
+            <p style={{ marginTop: 12, fontSize: 13, color: "#6b7280" }}>
+              Tip: Warm up first. Practice on a non-slip surface. Stop if you feel pain.
+            </p>
           </div>
 
-          <p style={{ marginTop: 12, fontSize: 13, color: "#6b7280" }}>
-            Tip: Warm up first. Practice on a non-slip surface. Stop if you feel pain.
+          <div
+            style={{
+              position: "relative",
+              width: "100%",
+              minHeight: 260,
+              borderRadius: 14,
+              overflow: "hidden",
+              background: "#f3f4f6",
+            }}
+          >
+            {/* Put an image in /public, e.g. /public/karate-hero.jpg */}
+            <div className="hero-image-container">
+            <div className="hero-image">
+              <Image
+                src="/KarateFrontPage.jpg"
+                alt="Karate training"
+                fill
+                style={{ objectFit: "cover", objectPosition: "center"}}
+              />
+            </div>
+            </div>
+          </div>
+        </section>
+
+
+        {/* QUICK PATHS */}
+        <section style={{ marginTop: 28 }}>
+          <h2 style={{ margin: "0 0 12px 0" }}>Choose your path</h2>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              gap: 16,
+            }}
+          >
+            <Card
+              title="Beginner Basics"
+              desc="Stances, guard, footwork, and how to punch safely."
+              href="/basics"
+              cta="Learn basics"
+            />
+            <Card
+              title="Kihon Drills"
+              desc="Structured repetition to build clean technique and timing."
+              href="/kihon"
+              cta="Train kihon"
+            />
+            <Card
+              title="Dojo Etiquette"
+              desc="Respect, safety, and the culture behind training."
+              href="/etiquette"
+              cta="Read etiquette"
+            />
+          </div>
+        </section>
+
+        {/* FEATURED LESSONS */}
+        <section style={{ marginTop: 28 }}>
+          <h2 style={{ margin: "0 0 12px 0" }}>Featured lessons</h2>
+
+          <div style={{ display: "grid", gap: 12 }}>
+            <LessonRow
+              title="Front stance (Zenkutsu-dachi)"
+              meta="5–8 min • fundamentals"
+              href="/lessons/front-stance"
+            />
+            <LessonRow
+              title="Straight punch (Oi-zuki)"
+              meta="6–10 min • technique"
+              href="/lessons/oi-zuki"
+            />
+            <LessonRow
+              title="Down block (Gedan-barai)"
+              meta="6–10 min • defense"
+              href="/lessons/gedan-barai"
+            />
+          </div>
+        </section>
+
+        {/* FOOTER */}
+        <footer style={{ marginTop: 40, paddingTop: 16, borderTop: "1px solid #e5e7eb" }}>
+          <p style={{ margin: 0, color: "#6b7280", fontSize: 13 }}>
+            © {new Date().getFullYear()} AU Addmissions • Built with Next.js • by Matei Mihalache
           </p>
-        </div>
-
-        <div
-          style={{
-            position: "relative",
-            width: "100%",
-            minHeight: 260,
-            borderRadius: 14,
-            overflow: "hidden",
-            background: "#f3f4f6",
-          }}
-        >
-          {/* Put an image in /public, e.g. /public/karate-hero.jpg */}
-          <Image
-            src="/KarateFrontPage.jpg"
-            alt="Karate training"
-            fill
-            style={{ aspectRatio: "16 / 9", objectFit: "cover" }}
-          />
-        </div>
-      </section>
-      
-
-      {/* QUICK PATHS */}
-      <section style={{ marginTop: 28 }}>
-        <h2 style={{ margin: "0 0 12px 0" }}>Choose your path</h2>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: 16,
-          }}
-        >
-          <Card
-            title="Beginner Basics"
-            desc="Stances, guard, footwork, and how to punch safely."
-            href="/basics"
-            cta="Learn basics"
-          />
-          <Card
-            title="Kihon Drills"
-            desc="Structured repetition to build clean technique and timing."
-            href="/kihon"
-            cta="Train kihon"
-          />
-          <Card
-            title="Dojo Etiquette"
-            desc="Respect, safety, and the culture behind training."
-            href="/etiquette"
-            cta="Read etiquette"
-          />
-        </div>
-      </section>
-
-      {/* FEATURED LESSONS */}
-      <section style={{ marginTop: 28 }}>
-        <h2 style={{ margin: "0 0 12px 0" }}>Featured lessons</h2>
-
-        <div style={{ display: "grid", gap: 12 }}>
-          <LessonRow
-            title="Front stance (Zenkutsu-dachi)"
-            meta="5–8 min • fundamentals"
-            href="/lessons/front-stance"
-          />
-          <LessonRow
-            title="Straight punch (Oi-zuki)"
-            meta="6–10 min • technique"
-            href="/lessons/oi-zuki"
-          />
-          <LessonRow
-            title="Down block (Gedan-barai)"
-            meta="6–10 min • defense"
-            href="/lessons/gedan-barai"
-          />
-        </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer style={{ marginTop: 40, paddingTop: 16, borderTop: "1px solid #e5e7eb" }}>
-        <p style={{ margin: 0, color: "#6b7280", fontSize: 13 }}>
-          © {new Date().getFullYear()} AU Addmissions • Built with Next.js • by Matei Mihalache
-        </p>
-      </footer>
-    </main>
+        </footer>
+      </main>
     </>
   );
 }
