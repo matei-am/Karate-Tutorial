@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Removed invalid `@theme` at-rule — using the :root custom properties above. */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.site-header {
+  background-color: #262626;
+  padding: 10px;
+  text-align: center;
+}
+.site-header a {
+  color: rgb(255, 255, 255);
+  margin: 0 15px;
+  text-decoration: none;
+}
+.site-header a:hover {
+  color: rgb(255, 255, 255);
+  filter: brightness(75%);
+  text-decoration: underline;
+}
+.site-header h2.site-brand {
+    font-size: 44px;
+    font-weight: 800;
+    margin: 0px 0 0 0;
+    color: #f3f3f3; 
+    filter: brightness(100%) saturate(150%);
+}
+.navbar {
+  position:fixed;
+  top:0;
+  background-color: #00ff0d;
+  transition: 0.3s;
+}
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 14px 20px;
+}
+.nav-list li a:hover {
+  color: #ddd;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #262626;
+  margin: 4px 0;
+}
+@media screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-list.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+  }
+}
+
+
+
+
