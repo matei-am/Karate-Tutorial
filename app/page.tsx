@@ -2,25 +2,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import Header from "./components/header"; 
-
+import Menu from "./components/menu";
 
 export default function HomePage() {
   return (
-    <main style={{ maxWidth: 1000, margin: "0 auto", padding: "32px 24px" }} className="page">
-      <Header />
-
+    <>
+    <Header />
+    <main className="hero">
       {/* HERO */}
-      <section
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1.2fr 0.8fr",
-          gap: 24,
-          alignItems: "center",
-          padding: 24,
-          border: "1px solid #e5e7eb",
-          borderRadius: 16,
-        }}
-      >
+      <section className="hero-section">
         <div>
           <h1 style={{ fontSize: 42, lineHeight: 1.1, margin: 0 }}>
             Learn Karate: Basics, Kata, and Self-Discipline
@@ -82,12 +72,11 @@ export default function HomePage() {
             src="/KarateFrontPage.jpg"
             alt="Karate training"
             fill
-            sizes="(max-width: 900px) 100vw, 40vw"
-            style={{ objectFit: "cover" }}
-            priority
+            style={{ aspectRatio: "16 / 9", objectFit: "cover" }}
           />
         </div>
       </section>
+      
 
       {/* QUICK PATHS */}
       <section style={{ marginTop: 28 }}>
@@ -151,6 +140,7 @@ export default function HomePage() {
         </p>
       </footer>
     </main>
+    </>
   );
 }
 
