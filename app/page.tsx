@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import Header from "./components/header";
-import Menu from "./components/menu";
 
 export default function HomePage() {
   return (
@@ -13,7 +12,7 @@ export default function HomePage() {
         <section className="hero-section">
           <div>
             <h1 style={{ fontSize: 42, lineHeight: 1.1, margin: 0 }}>
-              Learn Karate: Basics, Kata, and Self-Discipline
+              Learn Karate: Strength, Respect, and Discipline
             </h1>
 
             <p style={{ fontSize: 18, marginTop: 14, color: "#374151" }}>
@@ -96,19 +95,19 @@ export default function HomePage() {
             <Card
               title="Beginner Basics"
               desc="Stances, guard, footwork, and how to punch safely."
-              href="/basics"
+              href="/kihon/basics"
               cta="Learn basics"
             />
             <Card
               title="Kihon Drills"
               desc="Structured repetition to build clean technique and timing."
-              href="/kihon"
+              href="/kihon/techniques"
               cta="Train kihon"
             />
             <Card
               title="Dojo Etiquette"
               desc="Respect, safety, and the culture behind training."
-              href="/etiquette"
+              href="/kihon/basics/etiquette"
               cta="Read etiquette"
             />
           </div>
@@ -122,17 +121,17 @@ export default function HomePage() {
             <LessonRow
               title="Front stance (Zenkutsu-dachi)"
               meta="5–8 min • fundamentals"
-              href="/lessons/front-stance"
+              href="/kihon/stances"
             />
             <LessonRow
               title="Straight punch (Oi-zuki)"
               meta="6–10 min • technique"
-              href="/lessons/oi-zuki"
+              href="/kihon/techniques"
             />
             <LessonRow
               title="Down block (Gedan-barai)"
               meta="6–10 min • defense"
-              href="/lessons/gedan-barai"
+              href="/kihon/techniques"
             />
           </div>
         </section>

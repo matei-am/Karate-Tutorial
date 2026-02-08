@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { title } from "process";
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,16 +35,16 @@ export default function Menu() {
         
         { className: "menu-toggle", title: "Basics", href: "/kihon/basics" },
         { className: "menu-toggle", title: "Stances", href: "/kihon/stances" },
-        { className: "menu-toggle", title: "Strikes", href: "/kihon/strikes" },
+        { className: "menu-toggle", title: "Techniques", href: "/kihon/techniques" },
       ],
     },
     {
       title: "Everything about Kata",
       key: "kata",
       submenu: [
-        { className: "menu-toggle", title: "Kata List", href: "/kata/list" },
+        { className: "menu-toggle", title: "Kata List", href: "/kata/kata-list" },
         { className: "menu-toggle", title: "Techniques", href: "/kata/techniques" },
-        { className: "menu-toggle", title: "Practice Tips", href: "/kata/tips" },
+        { className: "menu-toggle", title: "Practice Tips", href: "/kata/practice-tips" },
       ],
     },
     {
@@ -52,7 +53,20 @@ export default function Menu() {
       submenu : [
         { className: "menu-toggle", title: "Rules", href: "/kumite/rules" },
         { className: "menu-toggle", title: "Strategies", href: "/kumite/strategies" },
-        { className: "menu-toggle", title: "Training", href: "/kumite/training" },
+        { className: "menu-toggle", title: "Training & Tips", href: "/kumite/training-tips" },
+      ],
+    },
+    {
+      title: "Belt Progression",
+      key: "belt",
+      submenu: [
+        { className: "menu-toggle", title: "White Belt", href: "/belts" },
+        { className: "menu-toggle", title: "Yellow Belt", href: "/belts" },
+        { className: "menu-toggle", title: "Orange Belt", href: "/belts" },
+        { className: "menu-toggle", title: "Green Belt", href: "/belts" },
+        { className: "menu-toggle", title: "Blue Belt", href: "/belts" },
+        { className: "menu-toggle", title: "Brown Belt", href: "/belts" },
+        { className: "menu-toggle", title: "Black Belt", href: "/belts" },
       ],
     },
   ];

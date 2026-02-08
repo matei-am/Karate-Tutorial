@@ -214,6 +214,7 @@ body {
 .dropdown-toggle[aria-expanded="true"] .dropdown-arrow {
   transform: rotate(180deg);
 }
+
 .submenu {
   list-style: none;
   margin: 0;
@@ -224,7 +225,8 @@ body {
 
 .submenu li {
   list-style: none;
-  transition: background 3s ease;/**/
+  transition: background 3s ease;
+  /**/
 }
 
 .submenu a {
@@ -252,4 +254,72 @@ body {
     opacity: 1;
     max-height: 500px;
   }
+}
+
+.belts {
+  padding: "20px";
+  max-width: "1200px";
+  margin: "0 auto";
+}
+
+.belt-grid {
+  margin-left: 24px;
+  margin-right: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.belt-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease;
+}
+
+.belt-card:hover {
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.belt-color-indicator {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.belt-color-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  border: 2px solid #333;
+}
+
+/* Title card styling */
+.title-card {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  color: #ffffff;
+  padding: 48px 32px;
+  margin: 24px;
+  border-radius: 16px;
+  border-left: 6px solid #f97316;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.title-card h1 {
+  margin: 0 0 16px 0;
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.title-card p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.95;
+  color: #e5e7eb;
 }
