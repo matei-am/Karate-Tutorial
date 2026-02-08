@@ -136,12 +136,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* FOOTER */}
-        <footer style={{ marginTop: 40, paddingTop: 16, borderTop: "1px solid #e5e7eb" }}>
-          <p style={{ margin: 0, color: "#6b7280", fontSize: 13 }}>
-            © {new Date().getFullYear()} AU Addmissions • Built with Next.js • by Matei Mihalache
-          </p>
-        </footer>
+        
       </main>
     </>
   );
