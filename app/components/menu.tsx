@@ -69,6 +69,14 @@ export default function Menu() {
         { className: "menu-toggle", title: "Black Belt", href: "/belts" },
       ],
     },
+    {
+      title: "Dojo Etiquette",
+      key: "etiquette",
+      submenu: [
+        { className: "menu-toggle", title: "History", href: "/dojo-etiquette/history" },
+        { className: "menu-toggle", title: "Etiquette Rules", href: "/dojo-etiquette/rules" },
+      ],
+    },
   ];
 
   return (
