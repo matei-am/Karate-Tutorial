@@ -13,7 +13,7 @@ export default function History() {
             title: "Origins in Okinawa",
             period: "Pre-1868",
             description: "Shotokan Karate has its roots in Okinawa, where it developed from indigenous martial arts influences and Chinese fighting techniques. The name 'Shotokan' comes from the pen name of its founder, Gichin Funakoshi, who wrote under the pseudonym 'Shoto,' meaning 'pine waves.'",
-            image: <Image src="/Historical-okinawa-photo.jpg" alt="Okinawa Map" width={800} height={1200} />,
+            image: <Image src="/Historical-okinawa-photo.jpg" alt="Okinawa Map" width={800} height={600} />,
             keyPoints: ["Indigenous martial arts", "Chinese influences", "Cultural fusion"]
         },
         {

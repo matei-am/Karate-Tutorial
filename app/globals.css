@@ -14,13 +14,12 @@
   }
 }
 
-html,
-body {
+html {
   height: 100%;
-  margin: 0;
 }
 
 body {
+  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -606,5 +605,219 @@ main {
 
   .gallery-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Rules Page Styles */
+.rules-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.rules-container {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rule-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.rule-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-color: #f97316;
+  transform: translateY(-2px);
+}
+
+.rule-card.expanded {
+  border-color: #f97316;
+  box-shadow: 0 8px 20px rgba(249, 115, 22, 0.15);
+}
+
+.rule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.rule-title-section {
+  flex: 1;
+}
+
+.rule-category {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.category-essential {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.category-important {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.category-philosophy {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.rule-card h2 {
+  margin: 8px 0 0 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.rule-description {
+  margin: 0 0 16px 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+.expand-icon {
+  font-size: 14px;
+  color: #9ca3af;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.expand-icon.expanded {
+  transform: rotate(180deg);
+  color: #f97316;
+}
+
+.rule-details {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #f3f4f6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rule-photo {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rule-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.rule-list h3 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.rule-list ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.rule-list li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #374151;
+  position: relative;
+  padding-left: 20px;
+}
+
+.rule-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #f97316;
+  font-weight: bold;
+}
+
+.etiquette-reminder {
+  max-width: 1000px;
+  margin: 32px auto 24px;
+  padding: 32px;
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.25);
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.etiquette-reminder h2 {
+  margin: 0 0 16px 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.etiquette-reminder p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+/* Responsive Design for Rules Page */
+@media (max-width: 768px) {
+  .rule-details {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .rule-card {
+    padding: 20px;
+  }
+
+  .rule-card h2 {
+    font-size: 18px;
+  }
+
+  .etiquette-reminder {
+    padding: 24px;
+  }
+
+  .etiquette-reminder h2 {
+    font-size: 22px;
   }
 }
