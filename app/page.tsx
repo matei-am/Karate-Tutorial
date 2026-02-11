@@ -7,7 +7,7 @@ import Card from "./components/card";
 export default function HomePage() {
   return (
     <>
-      <Header />
+      <Header initialUser={null} />
       <main className="hero">
         {/* HERO */}
         <section className="hero-section">

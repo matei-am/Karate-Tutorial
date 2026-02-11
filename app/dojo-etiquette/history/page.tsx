@@ -62,7 +62,7 @@ export default function History() {
 
     return (
         <main className="history-page">
-            <Header />
+            <Header initialUser={null} />
             
             <div className="title-card">
                 <h1>History of Shotokan Karate</h1>

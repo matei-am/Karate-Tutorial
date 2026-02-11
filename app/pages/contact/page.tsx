@@ -5,7 +5,7 @@ export default function Contact(){
      return (
 
         <div>
-        <Header />
+        <Header initialUser={null} />
         <main>
             <h1>This is my Contact page</h1>
             <p>Nr.Tel: +40771729224

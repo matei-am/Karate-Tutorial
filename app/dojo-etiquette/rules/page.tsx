@@ -134,7 +134,7 @@ export default function Rules() {
 
     return (
         <main className="rules-page">
-            <Header />
+            <Header initialUser={null} />
             
             <div className="title-card">
                 <h1>Dojo Etiquette - The Rules of Respect</h1>

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Johnson() {
     return (
         <>
-            <Header />
+            <Header initialUser={null} />
             <div>
                 <main style ={{marginLeft: "50px"}}>
                     <h1>This is my cat, Johnson!</h1>
