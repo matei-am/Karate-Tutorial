@@ -106,7 +106,7 @@ export default function Belts() {
 
     return (
         <main className="belts">
-            <Header />
+            <Header initialUser={null} />
             <div className="title-card">
                 <h1>Karate Belt System</h1>
                 <p>
