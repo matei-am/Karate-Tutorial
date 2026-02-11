@@ -831,33 +831,3 @@ main {
   }
 }
 
-/* Kihon Stances Page Styles */
-.Kihon-Stances-Photo-Container-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2, 1fr;
-}
-
-.Kihon-Stances-Photo-Container-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2, 1fr;
-}
-
-.Kihon-Stance-Photo-1 {
-  object-fit: cover;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 2, 1fr;
-}
-
-.Kihon-Stance-Photo-2 {
-  object-fit: cover;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 2, 1fr;
-}

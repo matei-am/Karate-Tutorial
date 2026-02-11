@@ -5,29 +5,31 @@ export default function KihonStances() {
         <main>
             <Header initialUser={null} />
             <div className="w-full px-4 py-8 flex flex-col items-center">
-                <h1 className="text-4xl font-bold mb-8 text-center">基本 Kihon: Basic Karate Stances</h1>
-                <p className="text-lg mb-8 text-gray-700 text-center">
+               
+            <div className="title-card text-4xl font-bold mb-8 text-center">
+               <h1 className="text-4xl font-bold mb-8 text-center">基本 Kihon: Basic Karate Stances</h1>
+                <p>
                     Strong, stable stances are the foundation of karate. They provide balance, power,
                     and the ability to deliver effective techniques. Master these four fundamental stances.
                 </p>
-
+            </div>
                 {/* Zenkutsu Dachi */}
-                <section className="w-full h-auto mb-12 border-l-4 border-blue-500 pl-6">
+                <section className="w-full mb-12 border-l-4 border-blue-500 pl-6">
                     <h2 className="text-3xl font-bold mb-4 text-blue-600 text-center">
                         前屈立ち Zenkutsu Dachi (Front Stance)
                     </h2>
 
-                    <div className="grid grid-cols-3 gap-6 items-stretch w-full">
+                    <div className="grid grid-cols-3 gap-6 items-start w-full">
                         
-                        <div className="w-full h-full">
+                        <div className="w-full">
                             <img
                                 src="/zenkutsu-dachi-1.jpg"
                                 alt="Zenkutsu Dachi stance demonstration"
-                                className="w-full h-auto"
+                                className="w-[18em] h-auto mx-auto"
                             />
                         </div>
 
-                        <div className="bg-blue-50 p-6 rounded-lg w-full h-full text-center">
+                        <div className="bg-blue-50 p-6 rounded-lg w-full text-center">
                             <p className="text-lg mb-4 text-center">
                             The most commonly used stance in karate. It provides excellent stability and power
                             for forward techniques and is ideal for offensive movements.
@@ -52,27 +54,27 @@ export default function KihonStances() {
                         </div>
 
                        
-                        <div className="w-full h-full">
+                        <div className="w-full ">
                             <img
                                 src="/zenkutsu-dachi-2.jpg"
                                 alt="Zenkutsu Dachi stance demonstration"
-                                className="w-full h-auto"
+                                className="w-[18em] h-auto mx-auto"
                             />
                         </div>
                     </div>
                 </section>
                 {/* Kokutsu Dachi */}
-                <section className="mb-12 border-l-4 border-green-500 pl-6 text-center">
+                <section className="w-full mb-12 border-l-4 border-green-500 pl-6">
                     <h2 className="text-3xl font-bold mb-4 text-green-600 text-center">後屈立ち Kokutsu Dachi (Back Stance)</h2>
-                    <div className="flex gap-4 mb-6 items-stretch">
+                    <div className="grid grid-cols-3 gap-6 items-start w-full">
                         <div className="Kihon-Stance-Photo-Container-1">
                             <img
                                 src="/kokutsu-dachi-1.jpg"
                                 alt="Kokutsu Dachi stance demonstration"
-                                className="Kihon-Stance-Photo-1"
+                                className="w-[18em] h-auto mx-auto"
                             />
                         </div>
-                        <div className="bg-green-50 p-6 rounded-lg w-1/3 text-center">
+                        <div className="bg-green-50 p-6 rounded-lg text-center">
                             <p className="text-lg mb-4">
                                 A defensive stance that places weight toward the rear leg, making it excellent for
                                 blocking, evading, and preparing counterattacks.
@@ -100,24 +102,24 @@ export default function KihonStances() {
                             <img
                                 src="/kokutsu-dachi-2.jpg"
                                 alt="Kokutsu Dachi stance demonstration"
-                                className="Kihon-Stance-Photo-2"
+                                className="w-[18em] h-auto mx-auto"
                             />
                         </div>
                     </div>
                 </section>
 
                 {/* Kiba Dachi */}
-                <section className="mb-12 border-l-4 border-red-500 pl-6 text-center">
+                <section className="w-full mb-12 border-l-4 border-red-500 pl-6 text-center">
                     <h2 className="text-3xl font-bold mb-4 text-red-600 text-center">騎馬立ち Kiba Dachi (Horse Stance)</h2>
-                    <div className="flex gap-4 mb-6 items-stretch">
+                    <div className="grid grid-cols-3 gap-6 items-start w-full">
                         <div className="Kihon-Stance-Photo-Container-1">
                             <img
                                 src="/kiba-dachi-1.jpg"
                                 alt="Kiba Dachi stance demonstration"
-                                className="Kihon-Stance-Photo-1"
+                                className="w-[18em] h-auto mx-auto"
                             />
                         </div>
-                        <div className="bg-red-50 p-6 rounded-lg w-1/3 text-center">
+                        <div className="bg-red-50 p-6 rounded-lg text-center">
                             <p className="text-lg mb-4">
                                 Also called the "straddle stance," this wide stance is used for side techniques and
                                 builds strong legs and balance through low body positioning.
@@ -145,24 +147,24 @@ export default function KihonStances() {
                             <img
                                 src="/kiba-dachi-2.jpg"
                                 alt="Kiba Dachi stance demonstration"
-                                className="Kihon-Stance-Photo-2"
+                                className="w-[18em] h-auto mx-auto"
                             />
                         </div>
                     </div>
                 </section>
 
                 {/* Kamae */}
-                <section className="mb-12 border-l-4 border-purple-500 pl-6 text-center">
+                <section className="w-full mb-12 border-l-4 border-purple-500 pl-6 text-center">
                     <h2 className="text-3xl font-bold mb-4 text-purple-600 text-center">構え Kamae (Guard Position)</h2>
-                    <div className="flex gap-4 mb-6 items-stretch">
+                    <div className="grid grid-cols-3 gap-6 items-start w-full">
                         <div className="Kihon-Stance-Photo-Container-1">
                             <img
                                 src="/kamae-1.jpg"
                                 alt="Kamae guard position demonstration"
-                                className="Kihon-Stance-Photo-1"
+                                className="w-[18em] h-auto mx-auto"
                             />
                         </div>
-                        <div className="bg-purple-50 p-6 rounded-lg w-1/3 text-center">
+                        <div className="bg-purple-50 p-6 rounded-lg text-center">
                             <p className="text-lg mb-4">
                                 More of a ready position than a formal stance, kamae is the alert, balanced posture
                                 from which a karateka begins techniques and movements.
@@ -190,7 +192,7 @@ export default function KihonStances() {
                             <img
                                 src="/kamae-2.jpg"
                                 alt="Kamae guard position demonstration"
-                                className="Kihon-Stance-Photo-2"
+                                className="w-[18em] h-auto mx-auto"
                             />
                         </div>
                     </div>
