@@ -108,7 +108,7 @@ export default function HomePage() {
             <Card
               title="Dojo Etiquette"
               desc="Respect, safety, and the culture behind training."
-              href="/kihon/basics/etiquette"
+              href="/dojo-etiquette/rules"
               cta="Read etiquette"
             />
           </div>

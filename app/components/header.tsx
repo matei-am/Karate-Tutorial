@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import LoginButton from "./login";
 import {
   signInWithGoogle,
   signOut,
@@ -74,11 +73,10 @@ export default function Header({ initialUser }: { initialUser: any }) {
         <div className="profile">
           <a href="#" onClick={handleSignIn}>
             
-            Sign In with Google
+            Sign In
           </a>
         </div>
       )}
-        <LoginButton />
         </nav>
     </div>
   );
