@@ -4,7 +4,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
-import firebaseConfig from "./config";
+import { firebaseConfig } from "./config";
 
 // Use automatic initialization
 // https://firebase.google.com/docs/app-hosting/firebase-sdks#initialize-with-no-arguments

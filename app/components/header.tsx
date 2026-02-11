@@ -6,27 +6,26 @@ import {
   onIdTokenChanged,
 } from "../lib/firebase/auth.js";
 import { setCookie, deleteCookie } from "cookies-next";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import React from "react";
 
 
 function useUserSession(initialUser: any) {
-  useEffect(() => {
-    return onIdTokenChanged(async (user: any) => {
-      if (user) {
-        const idToken = await user.getIdToken();
-        await setCookie("__session", idToken);
-      } else {
-        await deleteCookie("__session");
-      }
-      if (initialUser?.uid === user?.uid) {
-        return;
-      }
-      window.location.reload();
-    });
-  }, [initialUser]);
+  const [user, setUser] = useState(initialUser);
 
-  return initialUser;
+  useEffect(() => {
+    return onIdTokenChanged(async (authUser: any) => {
+      if (authUser) {
+        const idToken = await authUser.getIdToken();
+        setCookie("__session", idToken);
+      } else {
+        deleteCookie("__session");
+      }
+      setUser(authUser);
+    });
+  }, []);
+
+  return user;
 }
 
 
@@ -54,11 +53,6 @@ export default function Header({ initialUser }: { initialUser: any }) {
         <>
           <div className="profile">
             <p>
-              <img
-                className="profileImage"
-                src={user.photoURL || "/profile.svg"}
-                alt={user.email}
-              />
               {user.displayName}
             </p>
 
@@ -78,7 +72,7 @@ export default function Header({ initialUser }: { initialUser: any }) {
       ) : (
         <div className="profile">
           <a href="#" onClick={handleSignIn}>
-            <img src="/profile.svg" alt="A placeholder user image" />
+            
             Sign In with Google
           </a>
         </div>
