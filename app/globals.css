@@ -73,7 +73,7 @@ main {
 .site-header a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  margin: 12px;
+  margin: 18px;
 }
 
 .site-header a:hover {
@@ -100,14 +100,22 @@ main {
   gap: 24px;
   padding-right: 12px;
 }
+/* Sign-in Styles */ 
 
-.login-container {
-  max-width: 400px;
-  margin: 48px auto;
-  padding: 24px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.profile {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  color:#f3f3f3;
+}
+
+.profile-name {
+margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  padding-right: 12px;
 }
 
 .footer {
