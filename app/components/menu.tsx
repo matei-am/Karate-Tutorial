@@ -43,7 +43,6 @@ export default function Menu() {
       key: "kata",
       submenu: [
         { className: "menu-toggle", title: "Kata List", href: "/kata/kata-list" },
-        { className: "menu-toggle", title: "Techniques", href: "/kata/techniques" },
         { className: "menu-toggle", title: "Practice Tips", href: "/kata/practice-tips" },
       ],
     },

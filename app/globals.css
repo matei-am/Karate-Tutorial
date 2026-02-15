@@ -839,3 +839,258 @@ margin-left: auto;
   }
 }
 
+/* ─── Kata List Page ─── */
+.kata-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding-bottom: 48px;
+}
+
+.kata-list {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.kata-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.kata-card:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  border-color: #f97316;
+  transform: translateY(-3px);
+}
+
+.kata-card-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.kata-info {
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kata-belt-badge {
+  display: inline-block;
+  align-self: flex-start;
+  background-color: #1f2937;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.kata-name {
+  margin: 0 0 6px 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.kata-moves {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #f97316;
+  margin-bottom: 12px;
+}
+
+.kata-description {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.kata-video-container {
+  position: relative;
+  background-color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+}
+
+.kata-video {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  border: none;
+}
+
+/* Bottom banner */
+.kata-banner {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  padding: 32px 36px;
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  color: #ffffff;
+  border-radius: 16px;
+  border-left: 6px solid #f97316;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.kata-banner h2 {
+  margin: 0 0 16px 0;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.kata-banner ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.kata-banner li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #e5e7eb;
+  position: relative;
+  padding-left: 20px;
+}
+
+.kata-banner li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #f97316;
+  font-weight: bold;
+}
+
+/* Responsive — Kata Page */
+@media (max-width: 768px) {
+  .kata-card-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .kata-video-container {
+    min-height: 220px;
+  }
+
+  .kata-video {
+    min-height: 220px;
+  }
+
+  .kata-info {
+    padding: 20px;
+  }
+
+  .kata-name {
+    font-size: 20px;
+  }
+
+  .kata-banner {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 24px;
+  }
+
+  .kata-banner h2 {
+    font-size: 22px;
+  }
+}
+
+/* ─── Practice Tips Page ─── */
+.tips-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding-bottom: 48px;
+}
+
+.tips-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.tip-card {
+  border-radius: 14px;
+  padding: 28px 24px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* Color variants */
+.tips-rose    { background-color: #fff1f2; border-color: #fda4af; }
+.tips-sky     { background-color: #e0f2fe; border-color: #7dd3fc; }
+.tips-amber   { background-color: #fef3c7; border-color: #fcd34d; }
+.tips-emerald { background-color: #d1fae5; border-color: #6ee7b7; }
+.tips-violet  { background-color: #ede9fe; border-color: #c4b5fd; }
+.tips-orange  { background-color: #fff7ed; border-color: #fdba74; }
+.tips-indigo  { background-color: #e0e7ff; border-color: #a5b4fc; }
+.tips-pink    { background-color: #fce7f3; border-color: #fbcfe8; }
+.tips-teal    { background-color: #ccfbf1; border-color: #99f6e4; }
+
+.tips-rose:hover    { border-color: #f43f5e; }
+.tips-sky:hover     { border-color: #0ea5e9; }
+.tips-amber:hover   { border-color: #f59e0b; }
+.tips-emerald:hover { border-color: #10b981; }
+.tips-violet:hover  { border-color: #8b5cf6; }
+.tips-orange:hover  { border-color: #f97316; }
+.tips-indigo:hover  { border-color: #4f46e5; }
+.tips-pink:hover    { border-color: #ec4899; }
+.tips-teal:hover    { border-color: #14b8a6; }
+
+.tip-icon {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.tip-title {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.tip-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #4b5563;
+}
+
+/* Responsive — Tips Page */
+@media (max-width: 900px) {
+  .tips-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

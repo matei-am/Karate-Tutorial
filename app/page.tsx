@@ -24,7 +24,7 @@ export default function HomePage() {
 
             <div style={{ display: "flex", gap: 12, marginTop: 18, flexWrap: "wrap" }}>
               <Link
-                href="/lessons"
+                href="/kumite/training-tips"
                 style={{
                   padding: "10px 14px",
                   borderRadius: 10,
@@ -34,11 +34,11 @@ export default function HomePage() {
                   fontWeight: 600,
                 }}
               >
-                Start Lessons
+                Start Kumite
               </Link>
 
               <Link
-                href="/kata"
+                href="/kata/kata-list"
                 style={{
                   padding: "10px 14px",
                   borderRadius: 10,
