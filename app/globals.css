@@ -839,7 +839,7 @@ margin-left: auto;
   }
 }
 
-/* ─── Kata List Page ─── */
+/*  Kata List Page  */
 .kata-page {
   background-color: #f9fafb;
   min-height: 100vh;
@@ -1011,7 +1011,7 @@ margin-left: auto;
   }
 }
 
-/* ─── Practice Tips Page ─── */
+/* Practice Tips Page */
 .tips-page {
   background-color: #f9fafb;
   min-height: 100vh;
@@ -1091,6 +1091,447 @@ margin-left: auto;
 @media (max-width: 560px) {
   .tips-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Kumite Rules Page ─── */
+.kumite-rules-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding-bottom: 48px;
+}
+
+.kumite-rules-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.kumite-rule-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.kumite-rule-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.rule-card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rule-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kumite-rule-card > * {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.kumite-rule-card .rule-icon {
+  font-size: 48px;
+  margin-top: 20px;
+  display: block;
+}
+
+.kumite-rule-card .rule-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.kumite-rule-card .rule-description {
+  margin: 0 0 24px 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4b5563;
+  flex-grow: 1;
+}
+
+/* Kumite Rules Color Variants */
+.rules-red      { background-color: #fef2f2; border-color: #fecaca; }
+.rules-blue     { background-color: #eff6ff; border-color: #93c5fd; }
+.rules-purple   { background-color: #f3e8ff; border-color: #d8b4fe; }
+.rules-green    { background-color: #f0fdf4; border-color: #86efac; }
+.rules-orange   { background-color: #fff7ed; border-color: #fdba74; }
+.rules-cyan     { background-color: #ecf0ff; border-color: #a5f3fc; }
+.rules-yellow   { background-color: #fefce8; border-color: #fef08a; }
+.rules-pink     { background-color: #fdf2f8; border-color: #fbce2d; }
+.rules-indigo   { background-color: #e0e7ff; border-color: #a5b4fc; }
+.rules-teal     { background-color: #ccfbf1; border-color: #99f6e4; }
+.rules-rose     { background-color: #fff1f2; border-color: #fda4af; }
+.rules-amber    { background-color: #fffbeb; border-color: #fde68a; }
+
+.rules-red:hover      { border-color: #dc2626; }
+.rules-blue:hover     { border-color: #2563eb; }
+.rules-purple:hover   { border-color: #7c3aed; }
+.rules-green:hover    { border-color: #16a34a; }
+.rules-orange:hover   { border-color: #f97316; }
+.rules-cyan:hover     { border-color: #06b6d4; }
+.rules-yellow:hover   { border-color: #eab308; }
+.rules-pink:hover     { border-color: #ec4899; }
+.rules-indigo:hover   { border-color: #4f46e5; }
+.rules-teal:hover     { border-color: #14b8a6; }
+.rules-rose:hover     { border-color: #f43f5e; }
+.rules-amber:hover    { border-color: #f59e0b; }
+
+/* ─── Kumite Training Tips Page ─── */
+.kumite-tips-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding-bottom: 48px;
+}
+
+.kumite-tips-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.kumite-tip-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.kumite-tip-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.tip-card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tip-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kumite-tip-card > * {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.kumite-tip-card .tip-icon {
+  font-size: 48px;
+  margin-top: 20px;
+  display: block;
+}
+
+.kumite-tip-card .tip-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.kumite-tip-card .tip-description {
+  margin: 0 0 24px 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4b5563;
+  flex-grow: 1;
+}
+
+/* Kumite Tips Color Variants */
+.tips-kumite-red       { background-color: #fef2f2; border-color: #fecaca; }
+.tips-kumite-blue      { background-color: #eff6ff; border-color: #93c5fd; }
+.tips-kumite-purple    { background-color: #f3e8ff; border-color: #d8b4fe; }
+.tips-kumite-green     { background-color: #f0fdf4; border-color: #86efac; }
+.tips-kumite-orange    { background-color: #fff7ed; border-color: #fdba74; }
+.tips-kumite-cyan      { background-color: #ecf0ff; border-color: #a5f3fc; }
+.tips-kumite-yellow    { background-color: #fefce8; border-color: #fef08a; }
+.tips-kumite-pink      { background-color: #fdf2f8; border-color: #fbce2d; }
+.tips-kumite-indigo    { background-color: #e0e7ff; border-color: #a5b4fc; }
+.tips-kumite-teal      { background-color: #ccfbf1; border-color: #99f6e4; }
+.tips-kumite-rose      { background-color: #fff1f2; border-color: #fda4af; }
+.tips-kumite-amber     { background-color: #fffbeb; border-color: #fde68a; }
+
+.tips-kumite-red:hover       { border-color: #dc2626; }
+.tips-kumite-blue:hover      { border-color: #2563eb; }
+.tips-kumite-purple:hover    { border-color: #7c3aed; }
+.tips-kumite-green:hover     { border-color: #16a34a; }
+.tips-kumite-orange:hover    { border-color: #f97316; }
+.tips-kumite-cyan:hover      { border-color: #06b6d4; }
+.tips-kumite-yellow:hover    { border-color: #eab308; }
+.tips-kumite-pink:hover      { border-color: #ec4899; }
+.tips-kumite-indigo:hover    { border-color: #4f46e5; }
+.tips-kumite-teal:hover      { border-color: #14b8a6; }
+.tips-kumite-rose:hover      { border-color: #f43f5e; }
+.tips-kumite-amber:hover     { border-color: #f59e0b; }
+
+/* Responsive — Kumite Pages */
+@media (max-width: 900px) {
+  .kumite-rules-grid,
+  .kumite-tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .kumite-rules-grid,
+  .kumite-tips-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .kumite-rule-card,
+  .kumite-tip-card {
+    border-radius: 12px;
+  }
+
+  .rule-card-image,
+  .tip-card-image {
+    height: 160px;
+  }
+}
+
+/* ─── Kumite Strategies Page ─── */
+.kumite-strategies-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding-bottom: 48px;
+}
+
+.kumite-strategies-list {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.kumite-strategy-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.kumite-strategy-card:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  border-color: #f97316;
+  transform: translateY(-3px);
+}
+
+.kumite-strategy-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.kumite-strategy-info {
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kumite-difficulty-badge {
+  display: inline-block;
+  align-self: flex-start;
+  background-color: #1f2937;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.kumite-strategy-name {
+  margin: 0 0 6px 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.kumite-timing {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #f97316;
+  margin-bottom: 12px;
+}
+
+.kumite-strategy-description {
+  margin: 0 0 16px 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.kumite-techniques {
+  margin: 16px 0 0 0;
+  padding: 16px;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  border-left: 4px solid #f97316;
+}
+
+.kumite-techniques h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f2937;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.kumite-techniques ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.kumite-techniques li {
+  margin-bottom: 6px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #374151;
+  padding-left: 20px;
+  position: relative;
+}
+
+.kumite-techniques li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #f97316;
+  font-weight: bold;
+}
+
+.kumite-strategy-image-container {
+  position: relative;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  overflow: hidden;
+}
+
+.kumite-strategy-image {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+}
+
+/* Strategies Banner */
+.kumite-strategies-banner {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  padding: 32px 36px;
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  color: #ffffff;
+  border-radius: 16px;
+  border-left: 6px solid #f97316;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.kumite-strategies-banner h2 {
+  margin: 0 0 16px 0;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.kumite-strategies-banner ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.kumite-strategies-banner li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #e5e7eb;
+  position: relative;
+  padding-left: 20px;
+}
+
+.kumite-strategies-banner li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #f97316;
+  font-weight: bold;
+}
+
+/* Responsive — Kumite Strategies */
+@media (max-width: 768px) {
+  .kumite-strategy-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .kumite-strategy-image-container {
+    min-height: 220px;
+  }
+
+  .kumite-strategy-image {
+    min-height: 220px;
+  }
+
+  .kumite-strategy-info {
+    padding: 20px;
+  }
+
+  .kumite-strategy-name {
+    font-size: 20px;
+  }
+
+  .kumite-strategies-banner {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 24px;
+  }
+
+  .kumite-strategies-banner h2 {
+    font-size: 22px;
   }
 }
 
