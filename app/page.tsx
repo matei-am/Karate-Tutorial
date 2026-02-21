@@ -120,24 +120,24 @@ export default function HomePage() {
 
           <div style={{ display: "grid", gap: 12 }}>
             <LessonRow
+              title="Hierarchy - Belt colors and rank system explained"
+              meta="6–10 min • technique"
+              href="/belts"
+            />
+            <LessonRow
               title="Front stance (Zenkutsu-dachi)"
               meta="5–8 min • fundamentals"
               href="/kihon/stances"
             />
             <LessonRow
-              title="Straight punch (Oi-zuki)"
-              meta="6–10 min • technique"
-              href="/kihon/techniques"
-            />
-            <LessonRow
-              title="Down block (Gedan-barai)"
+              title="Preparing for competition: Kumite training tips"
               meta="6–10 min • defense"
-              href="/kihon/techniques"
+              href="/kumite/training-tips"
             />
           </div>
         </section>
 
-        
+  
       </main>
     </>
   );

@@ -301,6 +301,19 @@ margin-left: auto;
     max-height: 500px;
   }
 }
+.contact-page {
+  background-color: #222222;
+  min-height: 100vh;
+  padding-bottom: 48px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+}
 
 .belts {
   padding: "20px";

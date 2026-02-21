@@ -23,9 +23,9 @@ export default function KihonStances() {
                         
                         <div className="w-full">
                             <img
-                                src="/zenkutsu-dachi-1.jpg"
+                                src="/kihon/stances/zenkutsu-dachi-1.jpg"
                                 alt="Zenkutsu Dachi stance demonstration"
-                                className="w-[18em] h-auto mx-auto"
+                                className="w-[32em] h-auto mx-auto"
                             />
                         </div>
 
@@ -56,9 +56,9 @@ export default function KihonStances() {
                        
                         <div className="w-full ">
                             <img
-                                src="/zenkutsu-dachi-2.jpg"
+                                src="/kihon/stances/zenkutsu-dachi-2.jpg"
                                 alt="Zenkutsu Dachi stance demonstration"
-                                className="w-[18em] h-auto mx-auto"
+                                className="w-[32em] h-auto mx-auto"
                             />
                         </div>
                     </div>
@@ -69,9 +69,9 @@ export default function KihonStances() {
                     <div className="grid grid-cols-3 gap-6 items-start w-full">
                         <div className="Kihon-Stance-Photo-Container-1">
                             <img
-                                src="/kokutsu-dachi-1.jpg"
+                                src="/kihon/stances/kokutsu-dachi-1.jpg"
                                 alt="Kokutsu Dachi stance demonstration"
-                                className="w-[18em] h-auto mx-auto"
+                                className="w-[32em] h-auto mx-auto"
                             />
                         </div>
                         <div className="bg-green-50 p-6 rounded-lg text-center">
@@ -100,9 +100,9 @@ export default function KihonStances() {
                         </div>
                         <div className="Kihon-Stance-Photo-Container-2">
                             <img
-                                src="/kokutsu-dachi-2.jpg"
+                                src="/kihon/stances/kokutsu-dachi-2.jpg"
                                 alt="Kokutsu Dachi stance demonstration"
-                                className="w-[18em] h-auto mx-auto"
+                                className="w-[32em] h-auto mx-auto"
                             />
                         </div>
                     </div>
@@ -114,9 +114,9 @@ export default function KihonStances() {
                     <div className="grid grid-cols-3 gap-6 items-start w-full">
                         <div className="Kihon-Stance-Photo-Container-1">
                             <img
-                                src="/kiba-dachi-1.jpg"
+                                src="/kihon/stances/kiba-dachi-1.jpg"
                                 alt="Kiba Dachi stance demonstration"
-                                className="w-[18em] h-auto mx-auto"
+                                className="w-[32em] h-auto mx-auto"
                             />
                         </div>
                         <div className="bg-red-50 p-6 rounded-lg text-center">
@@ -145,9 +145,9 @@ export default function KihonStances() {
                         </div>
                         <div className="Kihon-Stance-Photo-Container-2">
                             <img
-                                src="/kiba-dachi-2.jpg"
+                                src="/kihon/stances/kiba-dachi-2.jpg"
                                 alt="Kiba Dachi stance demonstration"
-                                className="w-[18em] h-auto mx-auto"
+                                className="w-[36em] h-auto mx-auto"
                             />
                         </div>
                     </div>
@@ -159,9 +159,9 @@ export default function KihonStances() {
                     <div className="grid grid-cols-3 gap-6 items-start w-full">
                         <div className="Kihon-Stance-Photo-Container-1">
                             <img
-                                src="/kamae-1.jpg"
+                                src="/kihon/stances/kamae-1.jpg"
                                 alt="Kamae guard position demonstration"
-                                className="w-[18em] h-auto mx-auto"
+                                className="w-full h-auto mx-auto"
                             />
                         </div>
                         <div className="bg-purple-50 p-6 rounded-lg text-center">
@@ -190,9 +190,9 @@ export default function KihonStances() {
                         </div>
                         <div className="Kihon-Stance-Photo-Container-2">
                             <img
-                                src="/kamae-2.jpg"
+                                src="/kihon/stances/kamae-2.jpg"
                                 alt="Kamae guard position demonstration"
-                                className="w-[18em] h-auto mx-auto"
+                                className="w-[36em] h-auto mx-auto"
                             />
                         </div>
                     </div>

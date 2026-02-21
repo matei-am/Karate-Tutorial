@@ -168,12 +168,10 @@ export default function Rules() {
                         {expandedRule === index && (
                             <div className="rule-details">
                                 <div className="rule-photo">
-                                    <Image 
+                                    <img 
                                         src={rule.image} 
                                         alt={rule.imageAlt} 
-                                        width={600} 
-                                        height={400}
-                                        className="rule-image"
+                                        className="w-[18em] h-auto mx-auto"
                                     />
                                 </div>
                                 <div className="rule-list">
