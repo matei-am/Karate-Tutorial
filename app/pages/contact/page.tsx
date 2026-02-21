@@ -17,7 +17,8 @@ export default function Contact() {
         {
             phone: "/phone-icon.png",
             link: "tel: +40771729224"
-        }
+        },
+       
     ];
     return (
 

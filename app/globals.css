@@ -1551,3 +1551,224 @@ margin-left: auto;
   }
 }
 
+/* ==================== About Page ==================== */
+.about-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding-bottom: 48px;
+}
+
+.about-timeline {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Card base */
+.about-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  max-width: 900px;
+  width: 100%;
+}
+
+.about-card:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  border-color: #f97316;
+  transform: translateY(-3px);
+}
+
+/* Alignment: odd cards left, even cards right */
+.about-card-left {
+  align-self: flex-start;
+  margin-right: auto;
+  margin-left: 0;
+  transform: translateX(-60px);
+}
+
+.about-card-right {
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: 0;
+  transform: translateX(60px);
+}
+
+.about-card-left:hover {
+  transform: translateX(-60px) translateY(-3px);
+}
+
+.about-card-right:hover {
+  transform: translateX(60px) translateY(-3px);
+}
+
+/* Inner layout */
+.about-card-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+/* When card is on the left, text first then photo (photo toward center/right) */
+.about-card-inner-left {
+  direction: ltr;
+}
+
+/* When card is on the right, photo first then text (photo toward center/left) */
+.about-card-inner-right {
+  direction: ltr;
+}
+
+.about-card-inner-right .about-card-photo {
+  order: -1;
+}
+
+.about-card-inner-right .about-card-text {
+  order: 1;
+}
+
+/* Text section */
+.about-card-text {
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-year-badge {
+  display: inline-block;
+  align-self: flex-start;
+  background-color: #1f2937;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.about-card-title {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.about-card-description {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+/* Photo placeholder */
+.about-card-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f4f6;
+  min-height: 280px;
+}
+
+.about-photo-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  color: #9ca3af;
+  font-size: 14px;
+  gap: 8px;
+}
+
+.about-photo-placeholder span {
+  font-size: 48px;
+}
+
+.about-photo-placeholder p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.about-card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Bottom banner */
+.about-banner {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  padding: 32px 36px;
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  color: #ffffff;
+  border-radius: 14px;
+  border-left: 5px solid #f97316;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.about-banner h2 {
+  margin: 0 0 12px 0;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.about-banner p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #d1d5db;
+}
+
+@media (max-width: 768px) {
+  .about-card {
+    max-width: 100%;
+  }
+
+  .about-card-left,
+  .about-card-right {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    transform: none;
+  }
+
+  .about-card-left:hover,
+  .about-card-right:hover {
+    transform: translateY(-3px);
+  }
+
+  .about-card-inner,
+  .about-card-inner-left,
+  .about-card-inner-right {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card-inner-right .about-card-photo {
+    order: 0;
+  }
+
+  .about-card-inner-right .about-card-text {
+    order: 0;
+  }
+
+  .about-banner {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 24px;
+  }
+}
+
