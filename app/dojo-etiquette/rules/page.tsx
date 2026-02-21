@@ -12,7 +12,7 @@ export default function Rules() {
             title: "Bowing - Rei (礼)",
             category: "Essential",
             description: "Bowing is the fundamental gesture of respect in Shotokan Karate. It represents humility, gratitude, and acknowledgment of your training partners and instructors.",
-            image: "/karate-bow-rei.jpg",
+            image: "/etiquette/karate-bow-rei.jpg",
             imageAlt: "Karate Bow Rei Demonstration",
             details: [
                 "Bow when entering and leaving the dojo",
@@ -26,7 +26,7 @@ export default function Rules() {
             title: "Dojo Entry and Exit",
             category: "Essential",
             description: "The dojo is considered a sacred training space. Proper entry and exit demonstrate respect for the training environment and those within it.",
-            image: "/dojo-entrance.jpg",
+            image: "/etiquette/dojo-entrance.jpg",
             imageAlt: "Dojo Entrance",
             details: [
                 "Remove shoes before entering the training area",
@@ -40,7 +40,7 @@ export default function Rules() {
             title: "Uniform and Appearance",
             category: "Essential",
             description: "Your gi (uniform) represents your commitment to training. Maintaining a clean and proper uniform shows respect for the art and your fellow students.",
-            image: "/karate-gi-uniform.jpg",
+            image: "/etiquette/karate-gi-uniform.jpg",
             imageAlt: "Karate Gi Uniform",
             details: [
                 "Wear a clean, white gi at all times",
@@ -55,7 +55,7 @@ export default function Rules() {
             title: "Addressing Instructors",
             category: "Essential",
             description: "Proper address of instructors reflects the hierarchical structure of traditional martial arts and shows appropriate respect.",
-            image: "/sensei-instruction.jpg",
+            image: "/etiquette/sensei-instruction.jpg",
             imageAlt: "Sensei Giving Instruction",
             details: [
                 "Address instructors as 'Sensei' (先生)",
@@ -70,7 +70,7 @@ export default function Rules() {
             title: "Training Conduct",
             category: "Important",
             description: "Proper behavior during training ensures safety, maximizes learning, and maintains the dojo's atmosphere of discipline and focus.",
-            image: "/karate-training-conduct.jpg",
+            image: "/etiquette/karate-training-conduct.jpg",
             imageAlt: "Karate Training Session",
             details: [
                 "Train with full effort and serious intent",
@@ -86,7 +86,7 @@ export default function Rules() {
             title: "Seiza Position (正座)",
             category: "Important",
             description: "Seiza is the formal kneeling position used for meditation, listening to instruction, and showing respect. It demonstrates patience and discipline.",
-            image: "/seiza-position.jpg",
+            image: "/etiquette/seiza-position.jpg",
             imageAlt: "Seiza Kneeling Position",
             details: [
                 "Kneel with both knees together",
@@ -101,7 +101,7 @@ export default function Rules() {
             title: "Dojo Kun (道場訓) - Training Hall Oath",
             category: "Philosophy",
             description: "The Dojo Kun represents the guiding principles of Shotokan Karate. These five precepts are recited at the end of each training session.",
-            image: "/dojo-kun-principles.jpg",
+            image: "/etiquette/dojo-kun-principles.jpg",
             imageAlt: "Dojo Kun Principles",
             details: [
                 "一、人格完成に努むること (Seek perfection of character)",
@@ -115,7 +115,7 @@ export default function Rules() {
             title: "Oss! (押忍)",
             category: "Important",
             description: "Oss is a versatile expression in karate culture, conveying respect, acknowledgment, understanding, and fighting spirit all in one word.",
-            image: "/oss-expression.jpg",
+            image: "/etiquette/oss-expression.jpg",
             imageAlt: "Oss Expression",
             details: [
                 "Use 'Oss!' to acknowledge instruction or commands",
@@ -171,7 +171,7 @@ export default function Rules() {
                                     <img 
                                         src={rule.image} 
                                         alt={rule.imageAlt} 
-                                        className="w-[18em] h-auto mx-auto"
+                                        className="w-full h-auto mx-auto"
                                     />
                                 </div>
                                 <div className="rule-list">

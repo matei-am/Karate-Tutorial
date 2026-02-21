@@ -14,7 +14,7 @@ const strategies = [
             "Gyaku-zuki (powerful reverse punch response)",
             "Mawashi geri (high roundhouse kick for the finish)",
         ],
-        image: "/kumite-1-2-3.jpg",
+        image: "/kumite/strategies/kumite-1-2-3.jpg",
     },
     {
         id: "blitz",
@@ -29,7 +29,7 @@ const strategies = [
             "Gyaku-zuki #2 (closing distance with hip drive)",
             "Gyaku-zuki #3 (final powerful punch)",
         ],
-        image: "/kumite-blitz.jpg",
+        image: "/kumite/strategies/kumite-blitz.jpg",
     },
     {
         id: "whirlwind",
@@ -44,7 +44,7 @@ const strategies = [
             "Mawashi geri (front roundhouse)",
             "Ushiro ura mawashi geri (spinning back roundhouse kick)",
         ],
-        image: "/kumite-whirlwind.jpg",
+        image: "/kumite/strategies/kumite-whirlwind.jpg",
     },
     {
         id: "low-high",
@@ -58,7 +58,7 @@ const strategies = [
             "Mae geri chudan (low kick distraction)",
             "Mawashi geri jodan (high kick to the head)",
         ],
-        image: "/kumite-low-high.jpg",
+        image: "/kumite/strategies/kumite-low-high.jpg",
     },
     {
         id: "side-angle",
@@ -72,7 +72,7 @@ const strategies = [
             "Footwork (pivot and circle)",
             "Yoko geri kekomi (side thrust kick at the moment they're turned)",
         ],
-        image: "/kumite-side-angle.jpg",
+        image: "/kumite/strategies/kumite-side-angle.jpg",
     },
     {
         id: "punch-sweep",
@@ -86,7 +86,7 @@ const strategies = [
             "Oi zuki (forward punch misdirection)",
             "Mae geri (front kick combo)",
         ],
-        image: "/kumite-punch-sweep.jpg",
+        image: "/kumite/strategies/kumite-punch-sweep.jpg",
     },
     {
         id: "retreat-counter",
@@ -100,7 +100,7 @@ const strategies = [
             "Evasive footwork (step back and angle)",
             "Gyaku-zuki or Mae geri counter",
         ],
-        image: "/kumite-retreat-counter.jpg",
+        image: "/kumite/strategies/kumite-retreat-counter.jpg",
     },
     {
         id: "kick-punch",
@@ -114,7 +114,7 @@ const strategies = [
             "Mae geri (front kick setup)",
             "Gyaku-zuki (powerful follow-up punch)",
         ],
-        image: "/kumite-kick-punch.jpg",
+        image: "/kumite/strategies/kumite-kick-punch.jpg",
     },
 ];
 
@@ -168,7 +168,7 @@ export default function KumiteStrategies() {
                                     <img
                                         src={strategy.image}
                                         alt={`${strategy.name} demonstration`}
-                                        className="kumite-strategy-image"
+                                        className="kumite-strategy-image h-full w-auto mx-auto"
                                     />
                                 </div>
                             </div>

@@ -504,6 +504,7 @@ margin-left: auto;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   padding: 32px;
+  align-items: stretch;
 }
 
 /* Photo Container */
@@ -511,19 +512,21 @@ margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .photo-wrapper {
-  width: 100%;
+  width: auto;
+  height: 100%;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .photo-wrapper img {
-  width: 100%;
+  width: auto;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
@@ -1454,7 +1457,7 @@ margin-left: auto;
   color: #f97316;
   font-weight: bold;
 }
-
+/*
 .kumite-strategy-image-container {
   position: relative;
   background-color: #e5e7eb;
@@ -1471,7 +1474,7 @@ margin-left: auto;
   min-height: 280px;
   object-fit: cover;
 }
-
+*/
 /* Strategies Banner */
 .kumite-strategies-banner {
   max-width: 1100px;

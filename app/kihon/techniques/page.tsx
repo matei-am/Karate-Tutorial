@@ -9,8 +9,8 @@ const techniques = [
         japanese: "追い突き",
         name: "Oi Zuki (Lunge Punch)",
         color: "blue",
-        img1: "/oi-zuki-1.jpg",
-        img2: "/oi-zuki-2.jpg",
+        img1: "/kihon/techniques/oi-zuki.jpg",
+        img2: "/kihon/techniques/oi-zuki.jpg",
         description:
             "A powerful straight punch delivered while stepping forward. The punching arm and the stepping leg move together, generating momentum from the entire body.",
         steps: [
@@ -34,8 +34,8 @@ const techniques = [
         japanese: "逆突き",
         name: "Gyaku Zuki (Reverse Punch)",
         color: "red",
-        img1: "/gyaku-zuki-1.jpg",
-        img2: "/gyaku-zuki-2.jpg",
+        img1: "/kihon/techniques/gyaku-zuki.jpg",
+        img2: "/kihon/techniques/gyaku-zuki.jpg",
         description:
             "The most commonly used scoring technique in kumite. The punch is delivered with the rear hand while maintaining stance, producing tremendous rotational power from the hips.",
         steps: [
@@ -59,8 +59,8 @@ const techniques = [
         japanese: "前蹴り",
         name: "Mae Geri (Front Kick)",
         color: "green",
-        img1: "/mae-geri-1.jpg",
-        img2: "/mae-geri-2.jpg",
+        img1: "/kihon/techniques/mae-geri.jpg",
+        img2: "/kihon/techniques/mae-geri.jpg",
         description:
             "A direct, linear kick aimed at the midsection or face. The ball of the foot (koshi) is the striking surface. Speed and snap are more important than raw power.",
         steps: [
@@ -84,8 +84,8 @@ const techniques = [
         japanese: "回し蹴り",
         name: "Mawashi Geri (Roundhouse Kick)",
         color: "purple",
-        img1: "/mawashi-geri-1.jpg",
-        img2: "/mawashi-geri-2.jpg",
+        img1: "/kihon/techniques/mawashi-geri.jpg",
+        img2: "/kihon/techniques/mawashi-geri.jpg",
         description:
             "A circular kick that travels in an arc to strike the side of the target. It uses the instep (haisoku) or the ball of the foot and is one of the most versatile kicks in karate.",
         steps: [
@@ -109,8 +109,8 @@ const techniques = [
         japanese: "上げ受け",
         name: "Age Uke (Rising Block)",
         color: "amber",
-        img1: "/age-uke-1.jpg",
-        img2: "/age-uke-2.jpg",
+        img1: "/kihon/techniques/age-uke.jpg",
+        img2: "/kihon/techniques/age-uke.jpg",
         description:
             "A fundamental upward sweeping block used to deflect attacks aimed at the head (jodan level). The forearm rises diagonally across the body to redirect the incoming strike above the head.",
         steps: [
@@ -134,8 +134,8 @@ const techniques = [
         japanese: "横蹴り",
         name: "Yoko Geri Kekomi (Side Thrust Kick)",
         color: "teal",
-        img1: "/yoko-geri-1.jpg",
-        img2: "/yoko-geri-2.jpg",
+        img1: "/kihon/techniques/yoko-geri.jpg",
+        img2: "/kihon/techniques/yoko-geri.jpg",
         description:
             "A powerful thrusting kick delivered to the side. The striking surface is the edge of the foot (sokuto). It combines reach, power, and stability, making it one of karate's most devastating kicks.",
         steps: [
@@ -226,7 +226,7 @@ export default function KihonTechniques() {
                                     <img
                                         src={t.img1}
                                         alt={`${t.name} demonstration 1`}
-                                        className="w-[18em] h-auto mx-auto rounded-lg shadow-md bg-gray-200"
+                                        className="w-full h-auto mx-auto rounded-lg shadow-md bg-gray-200"
                                     />
                                 </div>
 
@@ -254,7 +254,7 @@ export default function KihonTechniques() {
                                     <img
                                         src={t.img2}
                                         alt={`${t.name} demonstration 2`}
-                                        className="w-[18em] h-auto mx-auto rounded-lg shadow-md bg-gray-200"
+                                        className="w-full h-auto mx-auto rounded-lg shadow-md bg-gray-200"
                                     />
                                 </div>
                             </div>

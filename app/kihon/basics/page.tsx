@@ -9,8 +9,8 @@ const basics = [
         japanese: "道場訓",
         name: "Dojo Kun (Training Hall Rules)",
         color: "blue",
-        img1: "/dojo-kun-1.jpg",
-        img2: "/dojo-kun-2.jpg",
+        img1: "/kihon/basics/dojo-kun-1.jpg",
+        img2: "/kihon/basics/dojo-kun-2.jpg",
         description:
             "The Dojo Kun is a set of guiding principles recited at the end of every training session. They shape the character and mindset of every karateka beyond the physical techniques.",
         points: [
@@ -28,8 +28,8 @@ const basics = [
         japanese: "帯",
         name: "Obi (Belt System & Ranking)",
         color: "amber",
-        img1: "/obi-system-1.jpg",
-        img2: "/obi-system-2.jpg",
+        img1: "/kihon/basics/obi-system-1.jpg",
+        img2: "/kihon/basics/obi-system-2.jpg",
         description:
             "The coloured belt (obi) system represents a karateka's progression. Beginners start at white belt and advance through coloured belts (kyu ranks) toward the coveted black belt (dan ranks).",
         points: [
@@ -48,8 +48,8 @@ const basics = [
         japanese: "礼",
         name: "Rei (Etiquette & Bowing)",
         color: "green",
-        img1: "/rei-1.jpg",
-        img2: "/rei-2.jpg",
+        img1: "/kihon/basics/rei-1.jpg",
+        img2: "/kihon/basics/rei-2.jpg",
         description:
             "Rei (bowing) is the physical expression of respect in karate. It is performed at the start and end of every class, kata, and sparring match, and when entering or leaving the dojo.",
         points: [
@@ -67,8 +67,8 @@ const basics = [
         japanese: "空手の道",
         name: "Karate-Do (The Way of the Empty Hand)",
         color: "red",
-        img1: "/karate-do-1.jpg",
-        img2: "/karate-do-2.jpg",
+        img1: "/kihon/basics/karate-do-1.jpg",
+        img2: "/kihon/basics/karate-do-2.jpg",
         description:
             "The word 'karate' (空手) literally means 'empty hand.' The suffix '-do' (道) means 'way' or 'path.' Together, Karate-Do is not merely a fighting system but a lifelong journey of self-improvement.",
         points: [
@@ -87,8 +87,8 @@ const basics = [
         japanese: "基本・型・組手",
         name: "The Three Pillars: Kihon, Kata & Kumite",
         color: "purple",
-        img1: "/three-pillars-1.jpg",
-        img2: "/three-pillars-2.jpg",
+        img1: "/kihon/basics/three-pillars-1.jpg",
+        img2: "/kihon/basics/three-pillars-2.jpg",
         description:
             "All karate training revolves around three interconnected pillars. Together they form a complete system for developing the mind, body, and spirit of the martial artist.",
         points: [
@@ -107,8 +107,8 @@ const basics = [
         japanese: "呼吸",
         name: "Kokyu (Breathing & Energy)",
         color: "teal",
-        img1: "/kokyu-1.jpg",
-        img2: "/kokyu-2.jpg",
+        img1: "/kihon/basics/kokyu-1.jpg",
+        img2: "/kihon/basics/kokyu-2.jpg",
         description:
             "Proper breathing (kokyu) is the invisible engine of every karate technique. It oxygenates muscles, sharpens focus, and connects physical movement to mental intent.",
         points: [
@@ -194,7 +194,7 @@ export default function KihonBasics() {
                                     <img
                                         src={b.img1}
                                         alt={`${b.name} illustration 1`}
-                                        className="w-[18em] h-auto mx-auto rounded-lg shadow-md bg-gray-200"
+                                        className="w-[32em] h-auto mx-auto rounded-lg shadow-md bg-gray-200"
                                     />
                                 </div>
 
@@ -216,7 +216,7 @@ export default function KihonBasics() {
                                     <img
                                         src={b.img2}
                                         alt={`${b.name} illustration 2`}
-                                        className="w-[18em] h-auto mx-auto rounded-lg shadow-md bg-gray-200"
+                                        className="w-[32em] h-auto mx-auto rounded-lg shadow-md bg-gray-200"
                                     />
                                 </div>
                             </div>
