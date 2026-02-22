@@ -25,7 +25,7 @@ export default function Contact() {
         <div>
             <Header initialUser={null} />
             <main className="contact-page">
-               <div style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "2rem", paddingTop: "24px", borderRadius:"24px", textAlign: "center", color: "#f3f3f3" }}>
+               <div style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "2rem", paddingTop: "24px", borderRadius:"24px", textAlign: "center", color: "#f3f3f3", marginRight: "3rem", marginLeft: "3rem" }}>
                     <h1 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "2rem", textAlign: "center" }}>
                         Thanks for reaching out! I look forward to connecting with you.
                     </h1>

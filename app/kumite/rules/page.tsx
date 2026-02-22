@@ -6,7 +6,7 @@ const rules = [
         title: "Valid Target Areas",
         description:
             "Techniques must be directed at specific body areas: head (jodan), torso front and back (chudan), and abdomen (gedan). Attacks to other areas are forbidden.",
-        image: "/kumite-targets.jpg",
+        image: "/kumite/rules/kumite-targets.jpg",
         color: "rules-red",
     },
     {
@@ -14,7 +14,7 @@ const rules = [
         title: "Ippon & Scoring",
         description:
             "Ippon (1 point) is awarded for clean techniques with good form, speed, and control. Excessive force or bad timing results in no point.",
-        image: "/kumite-scoring.jpg",
+        image: "/kumite/rules/kumite-scoring.jpg",
         color: "rules-blue",
     },
     {
@@ -22,7 +22,7 @@ const rules = [
         title: "Prohibited Areas",
         description:
             "No attacks to the groin, knees, insteps, throat, or behind the head. Attacks below the belt are strictly forbidden. Throws and sweeps are also prohibited.",
-        image: "/kumite-prohibited.jpg",
+        image: "/kumite/rules/kumite-prohibited.jpg",
         color: "rules-purple",
     },
     {
@@ -30,7 +30,7 @@ const rules = [
         title: "Control & Safety",
         description:
             "All techniques must be executed with control. Excessive contact, even to legal areas, results in disqualification. The competitor's safety is paramount.",
-        image: "/kumite-control.jpg",
+        image: "/kumite/rules/kumite-control.jpg",
         color: "rules-green",
     },
     {
@@ -38,7 +38,7 @@ const rules = [
         title: "Hand Techniques",
         description:
             "Punches (zuki), backfists (uraken), spear hands (nukite), and open-hand strikes are allowed to the face and body when controlled and focused properly.",
-        image: "/kumite-hands.jpg",
+        image: "/kumite/rules/kumite-hands.jpg",
         color: "rules-orange",
     },
     {
@@ -46,7 +46,7 @@ const rules = [
         title: "Kick Techniques",
         description:
             "Kicks are allowed to the face, head, and body (chudan). Kicks performed with good balance and control score higher. Round kicks and front kicks are most common.",
-        image: "/kumite-kicks.jpg",
+        image: "/kumite/rules/kumite-kicks.jpg",
         color: "rules-cyan",
     },
     {
@@ -54,7 +54,7 @@ const rules = [
         title: "Match Duration",
         description:
             "Matches typically last 2-3 minutes for seniors, with variations for juniors. Time is divided into clear rounds with brief pauses for scoring assessment.",
-        image: "/kumite-time.jpg",
+        image: "/kumite/rules/kumite-time.jpg",
         color: "rules-yellow",
     },
     {
@@ -62,7 +62,7 @@ const rules = [
         title: "Warning & Fouls",
         description:
             "Shido (warnings) are given for fouls: stepping out of bounds, excessive contact, or illegal techniques. Three shido result in automatic disqualification.",
-        image: "/kumite-fouls.jpg",
+        image: "/kumite/rules/kumite-fouls.jpg",
         color: "rules-pink",
     },
     {
@@ -70,7 +70,7 @@ const rules = [
         title: "Winning Conditions",
         description:
             "Win by first attaining 3 points, or by majority points if time expires. Knockdown (opponent unable to fight) results in immediate victory.",
-        image: "/kumite-win.jpg",
+        image: "/kumite/rules/kumite-win.jpg",
         color: "rules-indigo",
     },
     {
@@ -78,7 +78,7 @@ const rules = [
         title: "Referee Decisions",
         description:
             "Main referee (shushin) makes all final scoring decisions. Corner referees assist. Their decision is law — no arguments are tolerated.",
-        image: "/kumite-referee.jpg",
+        image: "/kumite/rules/kumite-referee.jpg",
         color: "rules-teal",
     },
     {
@@ -86,7 +86,7 @@ const rules = [
         title: "Weight Categories",
         description:
             "Competitions are divided into weight classes: lightweight, middleweight, heavyweight, and open. Divisions ensure fair competition across sizes.",
-        image: "/kumite-weight.jpg",
+        image: "/kumite/rules/kumite-weight.jpg",
         color: "rules-rose",
     },
     {
@@ -94,7 +94,7 @@ const rules = [
         title: "Disqualification Offenses",
         description:
             "Automatic disqualification for: excessive contact, attacking a downed opponent, abusive behavior, or three warnings (shido). Respect is non-negotiable.",
-        image: "/kumite-disqualify.jpg",
+        image: "/kumite/rules/kumite-disqualify.jpg",
         color: "rules-amber",
     },
 ];
