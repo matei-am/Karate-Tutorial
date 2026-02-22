@@ -59,7 +59,7 @@ const timelineEvents = [
     },
     {
         id: "competitive-career",
-        year: "2021 – 2022",
+        year: "2021 – 2025",
         title: "Competitive Career",
         image: "/about/competitive-career.jpg",
         description:
