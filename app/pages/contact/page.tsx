@@ -45,7 +45,7 @@ export default function Contact() {
                         </div>
                     </p>
                     <Image
-                    src="/poza-matei.jpg"
+                    src="/matei-poza.jpg"
                     alt="Contact"
                     width={600}
                     height={400} 

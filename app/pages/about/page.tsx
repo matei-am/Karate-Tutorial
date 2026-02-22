@@ -127,7 +127,7 @@ const timelineEvents = [
         id: "present-day",
         year: "2026 – Present",
         title: "Looking Ahead",
-        image: "/poza-matei.jpg",
+        image: "/matei-poza.jpg",
         description:
             "Today, I continue to train, study, and grow. Whether it's pursuing higher education, refining my karate, or building projects like this website, I approach everything with the same spirit: discipline, effort, and respect. I hope to come to Denmark to further my education and continue my karate journey, hopefully one day having the honor of being part of the Danish national team and representing the country in international competitions. I am excited for what the future holds and am committed to making the most of every opportunity that comes my way.",
     },
