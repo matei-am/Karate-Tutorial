@@ -94,7 +94,7 @@ const tips = [
         title: "Study Video",
         description:
             "Watch yourself spar. Watch professionals. Study your weaknesses and their strengths. Observation and analysis are as important as physical training.",
-        image: "/kumite-video.jpg",
+        image: "/kumite/tips/kumite-video.jpg",
         color: "tips-kumite-amber",
     },
 ];

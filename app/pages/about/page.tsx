@@ -119,7 +119,7 @@ const timelineEvents = [
         id: "accolades",
         year: "2015 – 2025",
         title: "Accolades & Recognition",
-        image: "/about/accolades.jpg",
+        image: "/about/accolades1.jpg",
         description:
             "My collection of medals and trophies from various competitions is a source of pride and motivation. Each accolade represents a milestone in my journey, reflecting the countless hours of training, dedication, and sacrifice that I have invested. These awards not only celebrate my achievements but also inspire me to continue striving for excellence in all my future endeavors. Although cliché, I take pride in all of my achievements, but I am most proud of my personal growth and the lessons I have learned along the way. Today, I wouldn't be the same person without support from my family, my brother, my training partners and my sensei and to them, i express my sincerest gratitude.",
     },
@@ -155,6 +155,7 @@ export default function About() {
                     {timelineEvents.map((event, index) => (
                         <div
                             key={event.id}
+                            id={event.id}
                             className={`about-card ${index % 2 === 0 ? "about-card-left" : "about-card-right"}`}
                         >
                             <div className={`about-card-inner ${index % 2 === 0 ? "about-card-inner-left" : "about-card-inner-right"}`}>
