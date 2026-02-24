@@ -7,7 +7,7 @@ const timelineEvents = [
         title: "Early Years",
         image: "/about/early-years.jpg",
         description:
-            "Born in Brasov, Romania, I was raised with a curiosity for both learning and sports. For as long as I can remember, I have always wanted to become the best at everything I do, always looking for new challenges to take on.",
+            "Born in Brasov, Romania, I was raised with a curiosity for both learning and sports. For as long as I can remember, I have always wanted to become the best at everything I do, always looking for new challenges to take on. I like to think of myself as happy, friendly and outgoing. I have always been surrounded by a loving family, with my parents and my older brother, Mihai, who has been a constant source of inspiration and support throughout my life.",
     },
     {
         id: "discovering-karate",
@@ -122,6 +122,14 @@ const timelineEvents = [
         image: "/about/accolades1.jpg",
         description:
             "My collection of medals and trophies from various competitions is a source of pride and motivation. Each accolade represents a milestone in my journey, reflecting the countless hours of training, dedication, and sacrifice that I have invested. These awards not only celebrate my achievements but also inspire me to continue striving for excellence in all my future endeavors. Although cliché, I take pride in all of my achievements, but I am most proud of my personal growth and the lessons I have learned along the way. Today, I wouldn't be the same person without support from my family, my brother, my training partners and my sensei and to them, i express my sincerest gratitude.",
+    },
+    {
+        id: "johnson",
+        year: "2025",
+        title: "Johnson 🐈",
+        image: "/about/johnson.jpg",
+        description:
+            "At my 18th birthday, I welcomed Johnson 🐈 into my life, a bengal cat who provided companionship and joy. I got him as a present from my brother for my 18th birthday, and have loved him ever since. It is nice to have someone show you unconditional love and having someone waiting for you at home after a long day, always happy and always wanting to play. He is quickly becoming one of my best friends.",
     },
     {
         id: "present-day",
