@@ -82,7 +82,7 @@ main {
   text-decoration: underline;
 }
 
-.site-header h2.logo {
+.site-header button.logo {
   text-align: left;
   margin-left: 48px;
   font-size: 44px;

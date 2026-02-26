@@ -68,7 +68,7 @@ export default function Header({ initialUser }: { initialUser: any }) {
 
   return (
     <div className="site-header">
-      <h2 className="logo">Karma.</h2>
+      <button onClick={() => (window.location.href = "/")} className="logo">Karma.</button>
       <nav className="site-links">
         <Link href="/">Home</Link>
         <Link href="/pages/about">About</Link>
